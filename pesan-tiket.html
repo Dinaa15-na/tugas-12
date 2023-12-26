@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pesan tiket</title>
+</head>
+<body>
+  <fieldset>
+    <h1>Pemesanan Tiket</h1>
+  <form>
+    <div class="form-group row">
+      <label class="col-4 col-form-label" for="nama_lengkap">Nama Lengkap</label> 
+      <div class="col-8">
+        <input id="nama_lengkap" name="nama_lengkap" placeholder="Masukan Nama Lengkap" type="text" class="form-control" required="required">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="Email" class="col-4 col-form-label">Email</label> 
+      <div class="col-8">E
+        <input id="email" name="email" placeholder="Masukan email" type="text" class="form-control" required="required">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="Jadwal_Keberangkatan" class="col-4 col-form-label">Jadwal Keberangkatan</label> 
+      <div class="col-8">
+        <input id="Jadwal_Keberangkatan" name="Jadwal_Keberangkatan" placeholder="Masukan" type="date" class="form-control" required="required">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-4">Tujuan Keberangkatan </label> 
+      <div class="col-8">
+        <div class="custom-control custom-radio custom-control-inline">
+          <input name="Tujuan_Keberangkatan" id="Tujuan_Keberangkatan" type="radio" class="custom-control-input" value="bali" required="required"> 
+          <label for="jenis_kelamin_0" class="custom-control-label">bali</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input name="Tujuan_Keberangkatan" id="Tujuan_Keberangkatan" type="radio" class="custom-control-input" value="yogyakarta" required="required"> 
+          <label for="Tujuan_Keberangkatan" class="custom-control-label">yogyakarta</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input name="Tujuan_Keberangkatan" id="Tujuan_Keberangkatan" type="radio" class="custom-control-input" value="Padang" required="required"> 
+          <label for="Tujuan_Keberangkatan" class="custom-control-label">Padang</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="status" class="col-4 col-form-label">Jumlah tiket</label> 
+      <div class="col-8">
+       <input type="number">
+      </div>
+    </div> 
+    <div class="form-group row">
+      <div class="offset-4 col-8">
+        <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+</fieldset>
+</body>
+</html>

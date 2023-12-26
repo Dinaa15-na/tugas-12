@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+     <nav class="navbar">
+        <table style="background-color: rgb(35, 93, 107);">
+            <fieldset>
+        <legend>
+         <h2>Login</h2>
+        </legend>
+    <label for="username">username</label>
+    <input type="text" id="username">
+    <br>
+    <br>
+    <label for="password">password</label>
+    <input type="password" id="password">
+    <br>
+    <br>
+    <button onclick="login()">Login</button>
+
+    <script>
+        function login(){
+            let username= document.getElementById('username').value;
+            let password= document.getElementById('password').value;
+
+            console.log(username);
+            console.log(password);
+
+            if (username == "dina2023" && password == "integrity") {
+                location.href = "loginsukses.html";
+            } else {
+                alert('username atau password salah');
+            }
+        }
+    </script>
+    </nav>
+    </fieldset>
+    </table>
+</body>
+</html>
